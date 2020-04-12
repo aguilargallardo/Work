@@ -14,7 +14,7 @@ def create_app():
         return render_template('index.html')
         
     @app.route('/predict', methods=['POST'])
-    # @app.route('/model/<text>', methods=['GET'])
+    @app.route('/predict', methods=['GET'])
     # def prediction():
     #     try:
     #         if request.method == 'POST':
