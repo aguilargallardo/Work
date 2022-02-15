@@ -61,7 +61,7 @@ def create_app():
             output = pred[0]
             #return subreddit from nearest neighbor
             
-            return render_template('index.html', prediction_text='You should post here! {} '.format(output))
+            return render_template('index.html', prediction_text='{}'.format(output))
 
     @app.route('/subReddit', methods=['GET'])
     def subRLink():
