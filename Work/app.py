@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, redirect
 import pickle
 import pandas as pd
 
@@ -65,9 +65,9 @@ def create_app():
 
     @app.route('/subReddit', methods=['GET'])
     def subRLink():
-        redditLink = "https://www.reddit.com/r" + output
+        redditLink = "https://" + "www.reddit.com/r" + output
 
-        return render_template('index.html', redditLink)
+        return redirect(redditLink)
 
 
     return app
