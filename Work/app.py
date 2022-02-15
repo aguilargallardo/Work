@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import pandas as pd
 
-
+output = ""
 def create_app():
     app = Flask(__name__)
     naive_bayes = pickle.load(open('naive_bayes.pkl', 'rb'))
@@ -62,5 +62,12 @@ def create_app():
             #return subreddit from nearest neighbor
             
             return render_template('index.html', prediction_text='You should post here! {} '.format(output))
+
+    @app.route('/subReddit', methods=['GET'])
+    def subRLink():
+        redditLink = "https://www.reddit.com/r" + output
+
+        return render_template('index.html', redditLink)
+
 
     return app
