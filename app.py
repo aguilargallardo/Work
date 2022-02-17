@@ -42,3 +42,5 @@ def create_app():
 
 
     return app
+
+APP = create_app()
