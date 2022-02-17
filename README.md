@@ -8,7 +8,7 @@ I chose this project because it was something I had created years back. Before m
 
 ## How it works
 
-The web app is consisted of a Flask backend with basic CSS/HTML in the front end. In the Flask backend, there is  a machine learning model inside of a function def predict( ). When a user writes a body of text inside of the text box, the text will be transformed into numerical data that can be ran through the machine learning model. Another function called def subRLink( ), will redirect the user to the actual subreddit to post on.
+The web app is consisted of a Flask backend with basic CSS/HTML in the front end. In the Flask backend, there is  a machine learning model inside of a function def predict( ). When a user writes a body of text inside of the text box, the text will be transformed (using NLP) into numerical data that can be ran through the machine learning model. Another function called def subRLink( ), will redirect the user to the actual subreddit to post on.
 
 ### The Dataset
 The dataset used is from a website called Kaggle. The dataset contains 1 million rows of reddit comments with that is categorized into 40 subreddits. 
