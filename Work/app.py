@@ -1,6 +1,3 @@
-from asyncio.windows_events import NULL
-from types import MethodType
-from xml.etree.ElementTree import tostring
 from flask import Flask, request, jsonify, render_template, redirect, url_for
 import pickle
 import pandas as pd
