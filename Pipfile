@@ -6,11 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-scikit-learn = "==0.21.3"
 numpy = "*"
 pandas = "*"
 flask = "*"
 gunicorn = "*"
+sklearn = "*"
+scikit-learn = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.10"
